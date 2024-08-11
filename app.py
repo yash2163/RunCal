@@ -13,6 +13,10 @@ scaler = pickle.load(open('scaler.pkl', 'rb'))  # Ensure the scaler is loaded
 def index():
     return render_template('index.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
@@ -43,5 +47,5 @@ def predict():
 
     return render_template('index.html', prediction_on=prediction_on, prediction_text=prediction_text)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)

@@ -1,0 +1,66 @@
+/* indexstyle.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #070101; /* Vibrant red background */
+    color: #9a2828;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #d46666; /* White background for the container for contrast */
+    padding: 20px;
+    margin: 100px auto; /* Center container with top and bottom margin */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+    width: 90%;
+    max-width: 500px; /* Increased max-width for better spacing */
+    text-align: center;
+}
+
+h1 {
+    color: #b30000; /* Dark red color for headings */
+    margin-bottom: 20px;
+}
+
+.input_form {
+    margin-bottom: 20px;
+}
+
+.input_form input {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 12px;
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Light gray background for inputs */
+}
+
+.input_form button {
+    background-color: #000000; /* Black button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.input_form button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+.results h2, .results h3 {
+    color: #000000; /* Black text color for results */
+}
+
+.results h2 {
+    margin-top: 20px;
+}
+
+.results h3 {
+    margin-top: 10px;
+    color: #555; /* Slightly lighter color for h3 */
+}
