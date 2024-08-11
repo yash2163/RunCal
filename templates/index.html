@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RunCal: Personalized Calorie Burn Predictor</title>
+  </head>
+  <body>
+    <h1>Predict your calories here</h1>
+
+    <form action="{{ url_for('predict') }}" method="post">
+      <input type="text" name="weight" placeholder="Enter Weight in Kg" />
+      <input type="text" name="height" placeholder="Enter Height in Cm" />
+      <input
+        type="text"
+        name="duration"
+        placeholder="Enter Duration in Minutes"
+      />
+      <input type="text" name="speed" placeholder="Enter Speed in km/h" />
+      <button type="submit">Predict</button>
+    </form>
+    <h1>{{prediction_on}}</h1>
+    <h1>{{ prediction_text }}</h1>
+  </body>
+</html>
